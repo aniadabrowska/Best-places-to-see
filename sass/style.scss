@@ -1,0 +1,31 @@
+
+@import "modules/_colors";
+@import "modules/_fonts";
+
+@import "./css/reset";
+@import "partials/elements/_header";
+@import "partials/elements/_maincontent";
+@import "partials/elements/_slider";
+
+// .module {}
+// .module .title {}
+
+// global
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container {
+    width:1200px;
+    margin:0 auto;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

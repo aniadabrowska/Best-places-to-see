@@ -1,0 +1,1 @@
+{"version":3,"sources":["_header.scss","style.scss"],"names":[],"mappings":"AAAA;EACI,cAAa;EACb,kBAAiB;CAEpB;;ACAD;EACI,gBAHO;EAIP,WAAU;CAEb","file":"style.css","sourcesContent":[".main-header {\n    height: 100px;\n    background: black;\n    \n}\n","@import \"_header.scss\";\n\n$color: red;\n\nbody {\n    background: $color;\n    color: red;\n\n}\n"]}

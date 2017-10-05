@@ -1,0 +1,57 @@
+/* -------------------------------------------- */
+/* main header */
+/* -------------------------------------------- */
+.page-header-cnt {
+    background: $colorPrimary;
+}
+
+/* -------------------------------------------- */
+/* main logo */
+/* -------------------------------------------- */
+.main-logo {
+    display: inline-block;
+    vertical-align: top;
+}
+.main-logo img {
+    display: block;
+    background-image: url('../images/logo.png');
+    height: 60px;
+}
+
+// .main-logo: hover {
+// opacity: 1;
+// /* Firefox */
+// -moz-transform: scale(2) rotate(30deg) translate(50px);
+// /* WebKit */
+// -webkit-transform: scale(1.2) rotate(30deg) translate(50px);
+// /* Opera */
+// -o-transform: scale(2) rotate(30deg) translate(50px);
+// /* Standard */
+// transform: scale(2) rotate(30deg) translate(50px);
+// z-index: 1000;
+//
+// }
+/* -------------------------------------------- */
+/* main nav */
+/* -------------------------------------------- */
+.main-nav {
+    float:right;
+}
+.main-nav li {
+    display: inline-block;
+}
+.main-nav li a {
+    font-size: 15px;
+    text-decoration: none;
+    color:#fff;
+    line-height: 60px;
+    padding:0 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.main-nav li a:hover {
+    color:$colorPickedCountry;
+    // border-bottom:4px solid #fff;
+    transition: all 500ms ease-in;
+
+}
