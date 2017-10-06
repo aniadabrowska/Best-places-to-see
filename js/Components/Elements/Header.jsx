@@ -5,7 +5,7 @@ class Header extends React.Component {
         return <div className="page-header-cnt">
             <header className="container main-header">
                 <a href="/" className="main-logo">
-                    <img src='images/logo.png' alt="Nasza firma" />
+                    <img src='images/logo.png' className="logoReact" alt="Nasza firma" />
                 </a>
                 <nav className="main-nav">
                     <ul>

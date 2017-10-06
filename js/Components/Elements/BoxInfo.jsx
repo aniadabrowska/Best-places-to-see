@@ -1,4 +1,5 @@
 import React from 'react';
+import Radium from 'radium';
 import {BoxTitle} from './BoxTitle.jsx';
 // import {Slider} from './Slider.jsx';
 
@@ -34,6 +35,7 @@ class BoxInfo extends React.Component {
             activeImg:  actualCountry[0].images[index]//pobrac obrazek z tablicy
         })
     }
+
     render() {
         let listitems = [];
         let list = "";
@@ -53,7 +55,8 @@ class BoxInfo extends React.Component {
                  console.log(actualCountry[0].images)
                     listitems = actualCountry[0].mustsee.map((elem,i)=>{
                      console.log(elem);
-                     return <li id={i} key ={i} onClick = {this.handleStartClick}>{elem}</li> // tu trzeba ustawic onclick
+                     return <li id={i} key ={i} style={{cursor:'pointer',':hover': { color: 'white',transition: 'all 900ms ease-in'}}}
+                         onClick = {this.handleStartClick}>{elem}</li> // tu trzeba ustawic onclick
                  })
             }
 
@@ -61,12 +64,16 @@ class BoxInfo extends React.Component {
         const imgStyle = {
             // border: '1px solid grey',
             borderRadius: '5px',
-            marginBottom: '20px'
+            marginBottom: '20px',
+            ':hover': {
+                backgroundColor: 'red',
+                scale: 1.2
+            }
         }
         return <div className="right">
                     <BoxTitle />
                     <div className="main-text">
-                        <p style = {{color: '#AAABD3'}}>
+                        <p style = {{color: '#AAABD3', textTransform: 'uppercase'}}>
                             {list}
                         </p>
                         <br />
@@ -76,9 +83,9 @@ class BoxInfo extends React.Component {
                         </ul>
                     </div>
 
-                    <img src={this.state.activeImg} style = {imgStyle}/>
+                    <img className="ImageUploaded" src={this.state.activeImg} style = {imgStyle}/>
         </div>
     }
 }
-
+BoxInfo = Radium(BoxInfo);
 export {BoxInfo}

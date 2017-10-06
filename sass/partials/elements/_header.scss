@@ -8,6 +8,23 @@
 /* -------------------------------------------- */
 /* main logo */
 /* -------------------------------------------- */
+@-webkit-keyframes spin {
+    100% { -webkit-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    100% { -moz-transform: rotate(360deg); }
+}
+@keyframes spin {
+    100% { -webkit-transform: rotate(360deg);
+    transform:rotate(360deg); }
+}
+.logoReact {
+    &:hover {
+        -webkit-animation:spin .9s ease-out .1s;
+        -moz-animation:spin .9s ease-out .1s;
+        animation:spin .9s ease-out .1s;
+    }
+}
 .main-logo {
     display: inline-block;
     vertical-align: top;
@@ -18,19 +35,7 @@
     height: 60px;
 }
 
-// .main-logo: hover {
-// opacity: 1;
-// /* Firefox */
-// -moz-transform: scale(2) rotate(30deg) translate(50px);
-// /* WebKit */
-// -webkit-transform: scale(1.2) rotate(30deg) translate(50px);
-// /* Opera */
-// -o-transform: scale(2) rotate(30deg) translate(50px);
-// /* Standard */
-// transform: scale(2) rotate(30deg) translate(50px);
-// z-index: 1000;
-//
-// }
+
 /* -------------------------------------------- */
 /* main nav */
 /* -------------------------------------------- */
